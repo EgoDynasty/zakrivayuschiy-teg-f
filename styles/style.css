@@ -16,6 +16,7 @@
 
 .page {
   font-family: var(--main-font-family);
+  font-variation-settings: 'wght' 400;
   color: var(--main-color);
   background-color: var(--main-background-color);
   min-inline-size: 320px;
@@ -119,7 +120,7 @@
   content: "▶";
   position: absolute;
   left: -15px;
-  animation: arrow 0.5s both infinite alternate ease-in-out ;
+  animation: arrow 0.5s both infinite alternate ease-in-out;
 }
 
 .theme-menu__button::after {
@@ -204,10 +205,10 @@
 
 @supports (text-stroke: 1px var(--label-stroke-color)) or
   (-webkit-text-stroke: 1px var(--label-stroke-color)) {
-    .image-label {
-      -webkit-text-stroke: 1px var(--text-stroke-color);
-    }
+  .image-label {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
   }
+}
 
 .image-label {
   font-family: var(--accent-font-family);
@@ -218,10 +219,10 @@
   mix-blend-mode: hard-light;
   text-transform: uppercase;
   top: 25px;
-  right: 25px
+  right: 25px;
 }
 
- .card__text-box {
+.card__text-box {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -246,7 +247,6 @@
   justify-content: end;
   z-index: 1;
 }
-
 
 .card__icon-button:focus .like-icon {
   outline: none;
@@ -277,12 +277,12 @@
 .like-icon:hover .main-body {
   transition: fill 0.3s linear 0.05s;
   fill: var(--main-color);
-} 
+}
 
 .like-icon:active .main-body {
   transition: fill 0.3s linear 0.05s;
   fill: var(--heart-color);
-} 
+}
 
 .core {
   fill: none;
@@ -322,7 +322,6 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-
 .is-liked .sparks {
   transform-origin: center;
   animation: sparks 0.3s 0.3s ease-in;
@@ -330,7 +329,7 @@
 
 .is-liked .heart {
   transform-origin: center;
-  animation: heart-scale 0.3s 0.1s alternate ease-in
+  animation: heart-scale 0.3s 0.1s alternate ease-in;
 }
 
 .button {
@@ -416,7 +415,7 @@
   background-color: var(--main-background-color);
   padding: 30px;
   inline-size: 357px;
-  block-size: 193px;;
+  block-size: 193px;
   color: var(--main-color);
   font-family: var(--accent-font-family);
   font-weight: 400;
@@ -453,4 +452,3 @@
   inline-size: 39px;
   block-size: 39px;
 }
-
