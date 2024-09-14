@@ -16,7 +16,6 @@
 
 .page {
   font-family: var(--main-font-family);
-  font-variation-settings: 'wght' 400;
   color: var(--main-color);
   background-color: var(--main-background-color);
   min-inline-size: 320px;
@@ -53,7 +52,7 @@
   background-color: var(--main-background-color);
   font-family: var(--accent-font-family);
   text-transform: uppercase;
-  margin: 100px 0 75px;
+  margin: 100px 0 100px;
   padding: clamp(7.5rem, 7.192rem + 1.31vw, 8.375rem) 0 20px;
   border: 2px solid var(--border-color);
 }
@@ -79,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: 14px;
-  gap: 14px;
+  gap: 12px;
   text-align: start;
   margin: 0 10%;
 }
@@ -89,10 +88,12 @@
 }
 
 .theme-menu__button {
+  cursor: pointer;
   background: none;
   border: none;
   text-transform: uppercase;
-}
+  transition: 0.3s;
+} 
 
 .theme-menu__button:focus {
   outline: none;
@@ -111,7 +112,6 @@
 }
 
 .theme-menu__button:hover {
-  transition: 0.3s;
   transition-timing-function: ease;
   opacity: 0.6;
 }
@@ -138,6 +138,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin-bottom: 100px;
 }
 
 @media (width<=375px) {
@@ -203,13 +204,6 @@
   position: relative;
 }
 
-@supports (text-stroke: 1px var(--label-stroke-color)) or
-  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
-  .image-label {
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-  }
-}
-
 .image-label {
   font-family: var(--accent-font-family);
   font-size: 14px;
@@ -220,6 +214,19 @@
   text-transform: uppercase;
   top: 25px;
   right: 25px;
+  z-index: 1;
+  text-shadow: -1px 0 var(--main-background-color), 
+  0 1px var(--main-background-color), 
+  1px 0 var(--main-background-color), 
+  0 -1px var(--main-background-color);
+}
+
+@supports (text-stroke: 1px var(--label-stroke-color)) or
+  (-webkit-text-stroke: 1px var(--label-stroke-color)) {
+  .image-label {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-shadow: none;
+  }
 }
 
 .card__text-box {
@@ -235,6 +242,7 @@
 }
 
 .card__icon-button {
+  cursor: pointer;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   background: none;
@@ -264,10 +272,6 @@
 
 .main-body {
   opacity: 1;
-}
-
-.like-icon {
-  transform: 0.3s ease;
 }
 
 .like-icon:not(:hover) .main-body {
@@ -341,6 +345,7 @@
   inline-size: 130px;
   block-size: 38px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .button::before {
@@ -365,6 +370,9 @@
 
 .button:focus {
   outline: none;
+}
+
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--box-shadow-color);
   transition: 0.5s;
 }
@@ -388,6 +396,7 @@
   block-size: 55px;
   background-color: var(--main-background-color);
   gap: 7px;
+  cursor: pointer;
 }
 
 @media (width <= 375px) {
@@ -411,35 +420,38 @@
 }
 
 .dialog[open] {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   background-color: var(--main-background-color);
   padding: 30px;
-  inline-size: 357px;
-  block-size: 193px;
   color: var(--main-color);
   font-family: var(--accent-font-family);
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  grid-template-rows: 39px 30px 1fr;
-  grid-template-columns: 39px 20px 1fr;
 }
 
 @media (width<=375px) {
   .dialog[open] {
-    padding: 30px 42px;
+    padding: 30px 40px;
   }
 }
 
 .dialog__title {
   line-height: 21px;
-  grid-column-start: 3;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .dialog__button {
   inline-size: 293px;
   block-size: 38px;
-  grid-row-start: 4;
+}
+
+.dialog__text-box {
+  display: flex;
+  gap: 20px;
 }
 
 @media (width<=375px) {

@@ -4,4 +4,15 @@
   --border-color: var(--main-color);
   --box-shadow-color: var(--main-color);
   --heart-color: #ff0000;
+  --main-color: #000;
+  --main-background-color: #fff;
+  --accent-background-color: #d3d3d3;
+  --background-image: url(../images/background-light.webp);
+  --accent-background-color-start: #e7e7e7;
+  --accent-background-color-end: #1a1a1a;
+  --normal: 400;
+  --bold: 700;
+  --label-stroke-color: #000;
+  --text-stroke-color: #fff;
+  --mix-color: var(--main-background-color);
 }

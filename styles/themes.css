@@ -9,6 +9,7 @@
   --bold: 700;
   --text-stroke-color: #fff;
   --mix-color: var(--main-background-color);
+  --label-stroke-color: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,6 +24,7 @@
     --bold: 700;
     --text-stroke-color: #fff;
     --mix-color: var(--main-background-color);
+    --label-stroke-color: #000;
   }
 }
 
@@ -37,6 +39,7 @@
   --bold: 785;
   --text-stroke-color: #000;
   --mix-color: var(--main-color);
+  --label-stroke-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,5 +54,6 @@
     --bold: 785;
     --text-stroke-color: #000;
     --mix-color: var(--main-color);
+    --label-stroke-color: #000;
   }
 }
