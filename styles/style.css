@@ -15,6 +15,7 @@
 */
 
 .page {
+  font-variation-settings: var(--normal);
   font-family: var(--main-font-family);
   color: var(--main-color);
   background-color: var(--main-background-color);
