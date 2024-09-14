@@ -2,4 +2,6 @@
   --main-font-family: Inter, sans-serif;
   --accent-font-family: "Press Start 2P", serif;
   --border-color: var(--main-color);
+  --box-shadow-color: var(--main-color);
+  --heart-color: #FF0000;
 }

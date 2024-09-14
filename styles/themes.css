@@ -7,6 +7,8 @@
 --accent-background-color-end: #1a1a1a;
 --normal: 400;
 --bold: 700;
+--text-stroke-color: #FFF;
+--mix-color: var(--main-background-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,6 +19,9 @@
   --background-image: url(../images/background-light.webp);
   --accent-background-color-start: #e7e7e7;
   --accent-background-color-end: #1a1a1a;
+  --normal: 400;
+  --bold: 700;
+  --text-stroke-color: #FFF;
   }
 }
 
@@ -29,6 +34,8 @@
 --accent-background-color-end: #004306;
 --normal: 485;
 --bold: 785;
+--text-stroke-color: #000;
+--mix-color: var(--main-color)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,5 +46,8 @@
   --background-image: url(../images/background-dark_.webp);
   --accent-background-color-start: #007f0c;
   --accent-background-color-end: #004306;
+  --normal: 485;
+  --bold: 785;
+  --text-stroke-color: #000;
   }
 }
