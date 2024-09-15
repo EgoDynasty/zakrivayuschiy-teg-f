@@ -9,7 +9,7 @@
   --bold: 700;
   --text-stroke-color: #fff;
   --mix-color: var(--main-background-color);
-  --label-stroke-color: #000;
+  --label-stroke-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,7 +24,7 @@
     --bold: 700;
     --text-stroke-color: #fff;
     --mix-color: var(--main-background-color);
-    --label-stroke-color: #000;
+    --label-stroke-color: #fff;
   }
 }
 
