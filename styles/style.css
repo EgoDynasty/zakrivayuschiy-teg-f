@@ -235,7 +235,7 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding: 25px 25px clamp(0.938rem, 0.827rem + 0.47vw, 1.25rem);
+  padding: 25px   ;
 }
 
 .card__text {
